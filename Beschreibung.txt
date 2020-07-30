@@ -1,6 +1,8 @@
 Eine einfache Java Anwendung (programmiert in Java 8
 auf IDE VisualCode).
+*************
 Beschreibung:
+*************
 Das Programm läuft auf Windows und Linux Rechner und
 verwaltet 2 Listen
 => eine Liste mit "Sherlock Holmes" Darstellern (z.B. Inspektor Lestrade, der Gute)
@@ -10,8 +12,14 @@ eines Hörbuchs) welche der entsprechenden Rolle aus Liste
 
 Man kann Liste 1 mit einem Ausfüllformular neue Einträge hinzugeben- und aus beiden Listen EInträge löschen!!
 
-
+**********************************
 Das PROGRAMM lässt sich auf jedem beliebigen Browser 
-öffnen. 
-Getestet auf Windows OS 8 .
+öffnen. (Voraussetzung:
+Java 8 installiert , Maven 3 installiert )
+**********************************
 
+Getestet auf Windows OS 8 .
+Verbesserungsvorschlag??? Her mit:
+benjamin-zipperer@web.de
+oder
+benjaminz.1@gmx.de
