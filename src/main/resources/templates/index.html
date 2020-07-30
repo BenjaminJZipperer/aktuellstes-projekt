@@ -1,0 +1,40 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>
+            Startseite
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link type="css/text" rel="stylesheet" 
+        href= "bootstrap.min.css" th:href="@{bootstrap.min.css}"/>
+        <style>
+            body{
+                background-color:lightgray;
+                color:blue; font-family:arial;
+                margin-left:200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header" style="background-color: red;width:100%;height:16%">
+            <img th:src="@{/photo_directory/unionj.png}" height="60px" width="110px"
+            src="../photo_directory/unionj.png" class="img-responsive" alt="Responsive image"/>
+        </div>
+        <div>
+        <div id="container" style="float:left;width:75%">
+         <!--href="<%= request.getContextPath()%>/inicio"-->
+        <h2><a href="/protagonists"> Alle Charakter</a></h2>
+        <p> [Hier sind alle Charakter der Sherlock Hoerbucher zu sehen:]</p>
+        <h2><a href="/speakerlist"> Alle Sprecher</a></h2>
+        <p> [Hier sind alle aktuellen Sprecher der Sherlock Hoerbucherer zu sehen:]</p>
+        </div>
+        <div id="titlepic" style="width:25%;float:left;background-color:lightgray;">
+            <img th:src="@{/photo_directory/titleapp.jpg}" width="120px"
+            src="../photo_directory/titleapp.jpg" class="img-responsive" alt="Responsive image"/>
+        </div>
+        </div>
+
+        <br></br>
+        <hr>
+       
+    </body>
+    </html>

@@ -1,0 +1,24 @@
+CSS Properties
+
+Here's a list of all properties that I think are absolutely essential to knowing CSS. The equivalent of knowing the most basic verbs and nouns in English that you can get by with.
+
+The minimum to be able to do anything:
+
+    padding, margin, border
+    background
+    color, font-family, font-weight, font-size, line-height
+    width, height, max-width, max-height
+
+Layout essentials:
+
+    position, z-index, top, right, bottom, left
+    display, flex, align-items, justify-content
+    @media
+
+Good to know, but not quite as essential as the rest:
+
+    grid, grid-template-columns, grid-template-rows
+    transform, transition
+
+We'll go into these more in a moment. Now we should have enough of the basics down to discuss some applications of the knowledge.
+Spacing Out: Padding and Margins

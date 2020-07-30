@@ -1,0 +1,31 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>
+          Neuer Charakter
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link type="css/text" rel="stylesheet" 
+        href= "bootstrap.min.css" th:href="@{bootstrap.min.css}"/>
+        <style>
+            body{
+                background-color:lightgray;
+                color:blue; font-family:arial;
+                margin-left:200px;
+            }
+        </style>
+    </head>
+    <body>
+      <h2>Hinzufuegen Neuer Charakter </h2>
+        <div id="header" style="margin-left:120px;margin-top:120px">
+          <form th:object="${heller}" th:action="@{save}" action="#" method="post">
+              <input type="text" th:field="*{nameprotagonist}" />&nbsp;Name des Schauspielers
+              <br></br><br></br>
+              <input type="text" th:field="*{id}" />&nbsp;ID des Schauspielers
+              <br></br>
+            <input type="submit" value="Anlegen" ></input>
+          </form>
+        </div>
+       
+       
+    </body>
+    </html>

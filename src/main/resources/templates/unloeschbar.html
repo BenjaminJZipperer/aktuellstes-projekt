@@ -1,0 +1,24 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>
+            Fehlermeldung
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link type="css/text" rel="stylesheet" 
+        href= "bootstrap.min.css" th:href="@{bootstrap.min.css}"/>
+        <style>
+            body{
+                background-color:lightgray;
+                color:blue;
+                font-family:arial;
+                margin-left:200px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Der Eintrag verweist auf einen anderen Eintrag in der Datenbank. <br>
+        Der Vorgang 'Entfernen' wurde angehalten!</h1>
+        <h2><a href="/"> Zurueck zur Startseite (Liste der Charaktere)</a></h2>
+        
+    </body>
+    </html>

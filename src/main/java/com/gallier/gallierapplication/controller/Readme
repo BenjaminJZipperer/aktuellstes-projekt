@@ -1,0 +1,11 @@
+Prozess:
+#### Das versteht keiner außer mir ;P
+develop (devBrch)
+git add --all
+git branch
+git commit -m "MyMessage"
+git log
+git reflog
+git checkout master
+git merge devBrch
+git status

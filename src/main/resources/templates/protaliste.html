@@ -1,0 +1,37 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>
+            Sprecherliste
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link type="css/text" rel="stylesheet" 
+        href= "bootstrap.min.css" th:href="@{bootstrap.min.css}"/>
+        <style>
+            body{
+                background-color:lightgray;
+                color:blue;
+                font-family:arial;
+                margin-left:200px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2><a href="/"> Zurueck zur Startseite (aktuelle Seite: Liste der Charaktere)</a></h2>
+        
+        <br></br>
+        <hr>
+        <h1>Liste Charaktere</h1>
+        <table class="table table-striped">
+            <tr>
+                <th>Name:</th>
+            </tr>
+            <tr th:each = "plaxer : ${players}">
+                <td th:text="${plaxer.nameprotagonist}">
+
+                </td>
+                <td><a th:href="@{/delete/{id}(id=${plaxer.id})}" class="btn btn-danger">Entfernen</a></td>
+            </tr>
+        </table>
+        <a href="/addNew">Anlegen eines Neuen Charakters</a>
+    </body>
+    </html>

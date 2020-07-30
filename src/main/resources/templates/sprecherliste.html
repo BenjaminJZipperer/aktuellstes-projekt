@@ -1,0 +1,44 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>
+            Sprecherliste
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link type="css/text" rel="stylesheet" 
+        href= "bootstrap.min.css" th:href="@{bootstrap.min.css}"/>
+        <style>
+            body{
+                background-color:lightgray;
+                color:blue;
+                font-family:arial;
+                margin-left:200px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2><a href="/"> Zurueck zur Startseite (aktuelle Seite: Liste der Sprecher)</a></h2>
+        
+        <br></br>
+        <hr>
+        <h1>Liste aller H&ouml;rbuch Sprecher(innnen)</h1>
+        <table class="table table-striped">
+            <tr>
+                <th>Name:</th>
+                <th>Job Nummer (f&uumlr Anfrage/Buchung)</th>
+                <th>Sprecher von:</th>
+            </tr>
+            <tr th:each = "redner : ${speakers}">
+                <td th:text="${redner.namespeaker}">
+
+                </td>
+                <td th:text="${redner.passport_number}">
+
+                </td>
+                <td th:text="${redner.ACTOR_ID}">
+
+                </td>
+                <td><a th:href="@{/deleteSpeaker/{id}(id=${redner.id})}" class="btn btn-danger">Entfernen</a></td>
+            </tr>
+        </table>
+    </body>
+    </html>
